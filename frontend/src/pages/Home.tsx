@@ -1,26 +1,91 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import "./Home.css";
+import "./home.css";
 
 function Home() {
-  const [navegar, setNavegar] = useState("");
-
   return (
     <div>
-      <h1>Welcome to the Bikepass demo!</h1>
-      <nav>
-        <p>Please, select the page you want to see:</p>
-        <select id="paginas" onChange={(e) => setNavegar(e.target.value)}>
-          <option value="/" selected>
-            Select
-          </option>
-          <option value="/brand">Brand</option>
-          <option value="/category">Category</option>
-          <option value="/user">User</option>
-          <option value="/bike">Bike</option>
-        </select>
-        <Link to={navegar}>Confirma</Link>
-      </nav>
+      <header>
+        <div id="logo">
+          <h1>logo</h1>
+        </div>
+        <div id="searchbar">
+          <h1>searchbar</h1>
+        </div>
+        <nav>
+          <a href="#">aaaa</a>
+        </nav>
+      </header>
+      <main>
+        <div>main</div>
+        <div className="container">
+          <div className="card">
+            <div className="cardcontent">
+              <div className="cardphoto">
+                <img src="#" alt="bike_photo" />
+              </div>
+              <h3>título da bike</h3>
+              <div className="descritivo">Aqui tem texto</div>
+              <h3>R$00,00</h3>
+              <button>Details</button>
+              <p id="cidade">cidade</p>
+              <button>fav</button>
+            </div>
+          </div>
+          <div className="card">
+            <div className="cardcontent">
+              <div className="cardphoto">
+                <img src="#" alt="bike_photo" />
+              </div>
+              <h3>título da bike</h3>
+              <div className="descritivo">Aqui tem texto</div>
+              <h3>R$00,00</h3>
+              <button>Details</button>
+              <p id="cidade">cidade</p>
+              <button>fav</button>
+            </div>
+          </div>
+          <div className="card">
+            <div className="cardcontent">
+              <div className="cardphoto">
+                <img src="#" alt="bike_photo" />
+              </div>
+              <h3>título da bike</h3>
+              <div className="descritivo">Aqui tem texto</div>
+              <h3>R$00,00</h3>
+              <button>Details</button>
+              <p id="cidade">cidade</p>
+              <button>fav</button>
+            </div>
+          </div>
+          <div className="card">
+            <div className="cardcontent">
+              <div className="cardphoto">
+                <img src="#" alt="bike_photo" />
+              </div>
+              <h3>título da bike</h3>
+              <div className="descritivo">Aqui tem texto</div>
+              <h3>R$00,00</h3>
+              <button>Details</button>
+              <p id="cidade">cidade</p>
+              <button>fav</button>
+            </div>
+          </div>
+          <div className="card">
+            <div className="cardcontent">
+              <div className="cardphoto">
+                <img src="#" alt="bike_photo" />
+              </div>
+              <h3>título da bike</h3>
+              <div className="descritivo">Aqui tem texto</div>
+              <h3>R$00,00</h3>
+              <button>Details</button>
+              <p id="cidade">cidade</p>
+              <button>fav</button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <Link to="/">Voltar</Link>
     </div>
   );
 }
