@@ -6,7 +6,8 @@ function Demo() {
   const [navegar, setNavegar] = useState("");
 
   return (
-    <div id="body">
+    <>
+    <div id="bodyx">
       <div className="conteudo">
         <h1>Welcome to the Bikepass demo!</h1>
         <nav>
@@ -21,11 +22,14 @@ function Demo() {
             <option value="/bike">Bike</option>
             <option value="/home">Home</option>
             <option value="/catalog">Catalog</option>
+            <option value="/registerbike">Register Bike</option>
+            <option value="/login">Login</option>
           </select>
           <Link to={navegar}>Confirma</Link>
         </nav>
       </div>
     </div>
+    </>
   );
 }
 

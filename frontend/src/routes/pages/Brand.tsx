@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { BrandProps } from "../../types";
 import BrandsService from "../../services/BrandService";
 import { Link } from "react-router-dom";
-import "./modelo.css";
 
 function Brand() {
   const [name, setName] = useState("");
@@ -31,14 +30,11 @@ function Brand() {
     e.preventDefault();
 
     // Converter os campos numéricos para inteiros ou floats
-    
 
     // Verificar se as conversões foram bem-sucedidas e se os campos obrigatórios foram preenchidos
-    if (
-      name.trim() !== ""
-    ) {
+    if (name.trim() !== "") {
       const res = await BrandsService.post({
-        name: name.trim()
+        name: name.trim(),
       });
       if (res.error) {
         alert(res.error);

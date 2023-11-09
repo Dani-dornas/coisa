@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { CategoriesProps } from "../../types";
 import CategoriesService from "../../services/CategoriesService";
 import { Link } from "react-router-dom";
-import "./modelo.css";
 
 function Category() {
   const [name, setName] = useState("");
@@ -31,14 +30,11 @@ function Category() {
     e.preventDefault();
 
     // Converter os campos numéricos para inteiros ou floats
-    
 
     // Verificar se as conversões foram bem-sucedidas e se os campos obrigatórios foram preenchidos
-    if (
-      name.trim() !== ""
-    ) {
+    if (name.trim() !== "") {
       const res = await CategoriesService.post({
-        name: name.trim()
+        name: name.trim(),
       });
       if (res.error) {
         alert(res.error);
