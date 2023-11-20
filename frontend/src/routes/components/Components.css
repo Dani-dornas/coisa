@@ -1,7 +1,6 @@
 #header {
   padding: 8px;
   background: #79ac78;
-  margin-bottom: 20px;
 }
 
 .searchbar {
@@ -56,15 +55,6 @@
   max-width: 150px;
 }
 
-#logoequipe {
-  float: right;
-}
-
-footer {
-  background-color: #727272;
-  margin-top: 85px;
-}
-
 #logout-button{
   border: 0;
   border-radius: 10%;
@@ -73,4 +63,13 @@ footer {
   padding: 5px 10px 5px 10px;
   font-size: x-large;
   margin-top: 1vh;
+}
+
+#logoequipe {
+  float: right;
+}
+
+footer {
+  background-color: #727272;
+  vertical-align: baseline;
 }
